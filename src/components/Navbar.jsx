@@ -3,7 +3,7 @@ import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";
 import Darkmode from "./Darkmode";
 
-const Navbar = () => {
+const Navbar = ({ handleOrderpopup }) => {
   const MenuLinks = [
     {
       id: 1,
@@ -110,7 +110,7 @@ const Navbar = () => {
             </div>
 
             {/* order button selection  */}
-            <button className="relative p-3">
+            <button className="relative p-3" onClick={handleOrderpopup}>
               <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400 " />
               <div className="w-4 h-4 rounded-full flex bg-red-700 text-white items-center absolute top-0 right-0 justify-center text-xs">
                 4

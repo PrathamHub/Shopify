@@ -19,6 +19,9 @@ export default {
           sm: "3rem",
         },
       },
+      screens: {
+        xs: "320px", // Customize this value as needed
+      },
     },
   },
   plugins: [],
